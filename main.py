@@ -9,9 +9,9 @@ class App(QWidget):
 
     def __init__(self):
         super().__init__()
-        self.title = 'Age-Gender-Detection'
-        self.left = 10
-        self.top = 10
+        self.title = 'Age-Gender-Detection '
+        self.left = 500
+        self.top = 250
         self.width = 420
         self.height = 150
         self.setStyleSheet("background-color: cyan;")
@@ -45,6 +45,7 @@ class App(QWidget):
 
     @pyqtSlot()
     def on_click1(self):
+        print("Thank you for using this application.This is made by Rahul Dhar")
         exit()
 
 
