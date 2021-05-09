@@ -42,6 +42,7 @@ ageList = ['(0-5)', '(6-10)', '(11-15)', '(16-20)', '(21-25)', '(26-30)', '(31-3
            '(96-100)']
 genderList = ['Male', 'Female']
 
+print("loading the application......")
 faceNet = cv2.dnn.readNet(faceModel, faceProto)
 ageNet = cv2.dnn.readNet(ageModel, ageProto)
 genderNet = cv2.dnn.readNet(genderModel, genderProto)
@@ -75,5 +76,5 @@ while cv2.waitKey(1) < 0:
         print(f'Age: {age[1:-1]} years')
 
         cv2.putText(resultImg, f'{gender}, {age}', (faceBox[0], faceBox[1] - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.8,
-                    (0, 255, 255), 2, cv2.LINE_AA)
+                    (0, 255, 0), 2, cv2.LINE_AA)
         cv2.imshow("Age - Gender Detector 2.0", resultImg)
