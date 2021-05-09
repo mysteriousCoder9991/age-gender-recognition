@@ -1,0 +1,6 @@
+h5py==3.2.1
+Keras==2.4.3
+numpy==1.20.2
+opencv-python==4.5.2.52
+PyYAML==5.4.1
+scipy==1.6.3
